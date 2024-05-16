@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>تسجيل الدخول</title>
+</head>
+<body dir="rtl">
+    
+    <div class="login-box">
+        <div class="login-header">
+            <header>مرحبا بك !</header>
+        </div>
+        <div class="input-box">
+            <input type="text" id="username" class="input-field" placeholder="اسم المستخدم" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="password" id="password" class="input-field" placeholder="كلمة المرور" autocomplete="off" required>
+        </div>
+        <div class="forgot">
+            <section></section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id="submit">
+                <label>تسجيل الدخول</label>
+            </button>
+        </div>
+        
+    </div>
+    <img src="imgs/logo-white.svg" class="logo" alt="Logo">
+
+    <img src="imgs/copyrightImg .png" class="copyright-img" alt="Copyright">
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if username and password match the expected values
+            if (username === 'admin' && password === '555331') {
+                // Redirect to the dashboard
+                window.location.href = 'dashboard.html';
+            } else {
+                // If username or password is incorrect, display an alert
+                alert('اسم المستخدم أو كلمة المرور غير صحيحة');
+            }
+        });
+    </script>
+</body>
+</html>
