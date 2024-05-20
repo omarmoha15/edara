@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/framework.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>الاستعلام</title>
+  </head>
+  <body dir="rtl" class="bg-eee">
+    <div class="page d-flex bg-eee">
+      <!-- Sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative text-center pb-15 mb-30 hide-mobile"><img src="imgs/logo-white.svg" class="sidebar-logo p-30" alt="Logo"></h3>
+        <ul>
+          <li>
+            <a
+              href="newrecord.html"
+              class="fs-14 rad-6 d-flex align-center c-black p-10"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw mr-10"></i>
+              <span class="hide-mobile">تسجيل جديد</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="Inquiries.html"
+              class="active fs-14 rad-6 d-flex align-center c-black p-10"
+            >
+              <i class="fa-solid fa-gear fa-fw mr-10"></i>
+              <span class="hide-mobile">استعلام</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="report.html"
+              class="fs-14 rad-6 d-flex align-center c-black p-10"
+            >
+              <i class="fa-regular fa-user fa-fw mr-10"></i>
+              <span class="hide-mobile">تقرير عام</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="edit.html"
+              class="fs-14 rad-6 d-flex align-center c-black p-10"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
+              <span class="hide-mobile">تعديل</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <!-- Content -->
+      <div class="content w-full">
+
+        <section dir="rtl" class="container">
+
+       
+        <h1 class="p-relative">الاستعلامات</h1>
+        <div class="wrapper">
+       
+          <div dir="rtl" class="search-container">
+            <div class="line">
+              <input type="text" class="search" placeholder="تسلسل الملف">
+              <input type="text" class="date-from" placeholder="الاسم">
+              <input type="text" class="date-to" placeholder="المنصب">
+              <input type="text" class="date-from" placeholder="الامر المسند اليه">
+            </div>
+            <div class="line">
+              <input type="text" class="date-to" placeholder="تاريخة">
+              <input type="text" class="date-from" placeholder="مصدرة"> 
+                
+                  <select class="selecto">
+                    <option hidden>اختر</option>
+                    <option>مشائخ الشمل</option>
+                    <option>مشائخ القبائل</option>
+                    <option>النواب</option>
+                    <option>العمد</option>
+                  </select>
+              
+            </div>
+            <div class="button-container">
+              <button type="submit" class="button">Search</button>
+            </div>
+          </div>
+        </div>
+        <table cellpadding="0" cellspacing="0" dir="rtl" class="table-fill">
+          <thead>
+            <tr >
+              <th class="text-right">تسلسل الملف</th>
+              <th class="text-right">الاسم</th>
+              <th class="text-right">المنصب</th>
+              <th class="text-right">الامر المسند اليه</th>
+              <th class="text-right">تاريخة</th>
+              <th class="text-right">مصدرة</th>
+              <th class="text-right">المحافظة التابع لها </th>
+              <th class="text-right">مصدرة</th>
+            </tr>
+          </thead>
+          <tbody class="table-hover">
+            <tr>
+              <td class="text-right">1</td>
+              <td class="text-right">فهد عبد الله </td>
+              <td class="text-right">شيخ شمل قبائل شهران</td>
+              <td class="text-right">12165</td>
+              <td class="text-right">1413/2/05</td>
+              <td class="text-right">وزارة الداخلية</td>
+              <td class="text-right">الحرب</td>
+              <td class="text-right">مدينة سلطان</td>
+            </tr>
+            <tr>
+              <td class="text-right">2</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">3</td>
+              <td class="text-right">احمد علي احمد معدي</td>
+              <td class="text-right">شيخ شمل بني ملك</td>
+              <td class="text-right">848609</td>
+              <td class="text-right">1413/02/4</td>
+              <td class="text-right">وزارة الداخلية</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">بللحمر</td>
+            </tr>
+            <tr>
+              <td class="text-right">4</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">5</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">6</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">7</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">8</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">9</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">10</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+            <tr>
+              <td class="text-right">11</td>
+              <td class="text-right">عبد الله عائض حامد</td>
+              <td class="text-right">شيخ شمل قبائل بني مغيد وبني نمار</td>
+              <td class="text-right">9109/98</td>
+              <td class="text-right">1413/05/4</td>
+              <td class="text-right">امارة منطقة عسير</td>
+              <td class="text-right">خميس مشيط</td>
+              <td class="text-right">طيب</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+        
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
